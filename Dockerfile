@@ -17,6 +17,6 @@ COPY . .
 EXPOSE 3000
 
 # คำสั่งสำหรับรันแอปพลิเคชัน
-CMD [ "npm", "start" ]
+CMD [ "node", "app.js" ]
 
 # eshopweb-k8s:1.0
