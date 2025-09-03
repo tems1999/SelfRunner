@@ -11,8 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
+
       - name: Deploy to Kubernetes
         run: |
           
           kubectl apply -f k8s/deployment.yaml
+          kubectl get pods -l app=eshop-web
+          kubectl get services
